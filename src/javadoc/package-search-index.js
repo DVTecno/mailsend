@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.mail"},{"l":"com.mail.controllers"},{"l":"com.mail.entity"},{"l":"com.mail.enumerated"},{"l":"com.mail.exceptions"},{"l":"com.mail.repositories"},{"l":"com.mail.service"},{"l":"com.mail.utilitys"}];updateSearchResults();

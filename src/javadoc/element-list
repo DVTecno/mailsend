@@ -1,0 +1,8 @@
+com.mail
+com.mail.controllers
+com.mail.entity
+com.mail.enumerated
+com.mail.exceptions
+com.mail.repositories
+com.mail.service
+com.mail.utilitys
