@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario para Enviar PDF</title>
+</head>
+<body>
+
+<h1>Formulario para Enviar PDF</h1>
+
+<form action="/enviar_correo_con_pdf" method="post" enctype="multipart/form-data">
+    <label for="to">Correo destinatario:</label>
+    <input type="email" id="to" name="to" required>
+
+    <label for="subject">Asunto:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="text">Texto del correo:</label>
+    <textarea id="text" name="text" required></textarea>
+
+    <label for="pdfFile">Seleccionar archivo PDF:</label>
+    <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+
+    <button type="submit">Enviar Correo con PDF</button>
+</form>
+
+</body>
+</html>

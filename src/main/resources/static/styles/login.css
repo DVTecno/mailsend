@@ -1,0 +1,182 @@
+:root {
+    --azulado: #0097A7;
+    --oscuro: rgb(28, 25, 49);
+    --beige: #f8f2cb;
+    --turquesa: #19dff1;
+    --facebook: #3b5999;
+    --instagram: #e4405f;
+    --linkedin: #0077B5;
+    --whatsapp: #25D366;
+    --colorLindo: #1D7874;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 120vh;   
+    background: linear-gradient(to left, #44bdb3,#1b5453); 
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    height: 80px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0px 1px 10px rgb(0, 0, 0);
+    z-index: 2;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1.1;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 1.4rem;
+}
+
+.logo img{
+    max-width: 300px;
+    height: 100%;
+}
+
+.volver{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 4rem;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 420;
+    color: black;
+    font-size: 0.9rem;
+    height: 27%;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s, color .3s ease;
+}
+
+nav a:hover:not(.logo), .pie a:hover{
+    color: var(--colorLindo);
+    background-size: 100% 2px;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background: linear-gradient(to left, #44bdb3,#1b5453); 
+}
+
+.pie{
+    padding-top: 1rem;
+    z-index: 2;
+    box-shadow: 0px -1px 10px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    height: 20%;
+    margin-top: auto;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.seccion-nav{
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.seccion-nav div{
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-sec{
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 600;
+    color: var(--colorLindo);
+}
+
+.pie .seccion-nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 420;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s, color .3s ease;
+    font-size: 0.8em;
+    list-style-type: none;
+    text-align: left;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.pie .seccion-nav a:hover{
+    color: var(--colorLindo);
+    background-size: 100% 2px;
+}
+
+.tyc{
+    padding: 0.5em;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-self: flex-end;
+    color: var(--colorLindo);
+    background-color: rgba(0, 0, 0, 0.041);
+}
+
+button {
+    background-image: linear-gradient(to left, #44bdb3,#1b5453);/* Reemplaza "tu-color" con el color deseado */
+    color:#f8f2cb /* Color del texto, puedes ajustarlo según sea necesario */
+}
+
+.btn-custom-color:hover{
+    background-image:linear-gradient(to left, #44bdb3,#1b5453);
+    color:#f8f2cb
+}

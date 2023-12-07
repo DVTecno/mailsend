@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Recupero de Contraseña</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/login.css">
+    <link rel="icon" type="image/png" href="/img/logo.png">
+</head>
+<body>
+<nav>
+    <div class="volver text-center">
+        <a href="/">Volver a Inicio</a>
+    </div>
+</nav>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <h5 class="card-title text-center m-2">Recupero de Contraseña</h5>
+        <div class="col-md-6">
+            <div th:if="${mensaje != null}">
+                <p class="text-success">[[${mensaje}]]</p>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form th:action="@{/olvido-password}" method="POST">
+                        <div class="form-group mt-3">
+                            <label for="email">Le enviaremos un enlace para restablecer la contraseña a su correo
+                                electrónico:</label>
+
+                            <input type="email" class="form-control" id="email" name="email"
+                                   placeholder="Ingrese su Correo Electrónico" required>
+                        </div>
+                        <div th:if="${error != null}">
+                            <p class="text-danger">[[${error}]]</p>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+
+                            <button type="submit" value="Enviar" class="btn btn-primary btn-block mt-3 border-0 w-50">
+                                Recuperar Contraseña
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+<script src="../static/js/scriptLogin.js"></script>
+</body>
+</html>
