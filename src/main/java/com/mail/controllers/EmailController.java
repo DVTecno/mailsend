@@ -60,7 +60,7 @@ public class EmailController {
             usuarioService.actualizarPasswordToken(token, email);
             String resetPasswordLink = Utility.getSiteURL(request) + "/reset_password?token=" + token;
             emailService.sendEmail(email, resetPasswordLink);
-            modelo.addAttribute("mensaje", "Se ha enviado un correo electrónico a su dirección de correo electrónico con un enlace para restablecer su contraseña.");
+            modelo.addAttribute("mensaje", "Se ha enviado un mensaje a su dirección de correo electrónico con un enlace para restablecer su contraseña.");
         } catch (MiExcepcion e) {
             modelo.addAttribute("error", e.getMessage());
         }
